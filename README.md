@@ -1,4 +1,4 @@
-# Guess-the-number-game
+# FunProjects
 this is my first repository
 <br>
 Author - Abhijeet havaldar
