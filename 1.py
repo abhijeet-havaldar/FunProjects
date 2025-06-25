@@ -1,28 +1,14 @@
-from turtle import * 
-import colorsys
+#Q:Write a Python function that takes a sequence of numbers and determines whether all the numbers are different from each other.
 
-bgcolor('black')
-tracer (500)
 
-def draw():
-    h = 0
-    for i in range(100):
-        c = colorsys.hsv_to_rgb(h,1,1)
-        h += 0.5
-        up()
-        goto(0,0)
-        down()
-        color('black')
-        fillcolor(c)
-        begin_fill()
-        rt(98)
-        circle(i,12)
-        fd(290)
-        fd(i)
-        lt(29)
-        for j in range(129):
-            fd(i)
-            circle(j, 299, steps=2)
-        end_fill()
-draw()
-done()
+def test_distinct(data):
+    if len(data) == len(set(data)):
+        return True
+    
+    else:
+
+        return False
+    
+print(test_distinct([1,5,7,9]))
+print(test_distinct([2,4,5,5,7,9]))
+
