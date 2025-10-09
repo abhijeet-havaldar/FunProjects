@@ -1,20 +1,9 @@
-import numpy as np 
-import matplotlib.pyplot as plt
- 
-radius = 1
-num_point = 50
-theta = np.linspace(0,2 * np.pi, num_point)
+#Q:Write a Python program to make combinations of 3 digits.
 
-x = radius * np.cos(theta)
-y = radius * np.sin(theta)
-fig, ax = plt.subplots()
+numbers = []
 
-ax.scatter(x, y, color='black',s=50)
-ax.set_xlim(-1.2, 1.2)
-ax.set_ylim(-1.2, 1.2)
+for num in range(1000):
+    num = str(num).zfill(3)
 
-ax.set_aspect('equal')
-ax.axis('off')
-plt.title("Circle pattern plot")
-
-plt.show()
+print(num)
+numbers.append(num)
